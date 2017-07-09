@@ -8,7 +8,7 @@ class PR_IoT_Relay : public PR_IoT_DeviceClass {
         public:
             PR_IoT_Relay(String name) : PR_IoT_DeviceClass(name) { }
             
-            void 	announce();
+            //virtual void 	announce();			//could be overloaded here from base class
             void 	update();
             void 	inMsgCallback(); 
             void 	setupHW(uint8_t pin, bool onValue);
